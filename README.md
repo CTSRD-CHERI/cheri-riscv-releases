@@ -1,6 +1,6 @@
-## CHERI-RISCV Release 0.001
+# CHERI-RISCV Release 0.001
 
-# Cloning the repos
+## Cloning the repos
 
 ```
 git clone https://github.com/CTSRD-CHERI/cheri-riscv-releases
@@ -9,7 +9,7 @@ git checkout cheri_riscv_snapshot_20190603
 git submodule update --init --recursive
 ```
 
-# Building LLVM
+## Building LLVM
 
 ```
 cd llvm-project/llvm
@@ -19,7 +19,7 @@ cmake .. -G Ninja -DBUILD_SHARED_LIBS=ON -DLLVM_EXPERIMENTAL_TARGETS_TO_BUILD=RI
 ninja
 ```
 
-# Building the example
+## Building the example
 
 ```
 cd examples
