@@ -46,9 +46,11 @@ ninja
 
 ## Building the example
 
+Assuming the compiler built in the previous step is in $PATH.
+
 ```sh
 cd examples
 clang -target riscv32-unknown-freebsd -march=rv32ixcheri -mabi=il32pc64 -o cap-mode-memcpy cap-mode-memcpy.c -nostdlib -nostartfiles -fno-inline -ffreestanding -fuse-ld=lld -O2 -Wl,-Ttext-segment=0x80001000
 ```
 
-Remove `-mabi=il32pc64` for pure capability code.
+This builds the example in pure capability mode.
