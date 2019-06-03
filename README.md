@@ -16,7 +16,9 @@ To build CHERI Piccolo, you need to have a working Bluespec compiler installed.
 From the `Piccolo/` directory, you can run the following commands to build the simulator and run the RISC-V ISA test suite:
 
 ```sh
-cd builds/RV64IUxCHERI_Piccolo_bluesim/
+cd Tests/elf_to_hex
+make
+cd ../../builds/RV64IUxCHERI_Piccolo_bluesim/
 make compile simulator isa_tests
 ```
 
