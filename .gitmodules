@@ -2,3 +2,7 @@
 	path = llvm-project
 	url = https://github.com/CTSRD-CHERI/llvm-project.git
 	branch = cheri-riscv
+[submodule "Piccolo"]
+	path = Piccolo
+	url = https://github.com/CTSRD-CHERI/Piccolo.git
+	branch = CHERI
