@@ -44,6 +44,17 @@ cmake ../llvm -G Ninja -DBUILD_SHARED_LIBS=ON -DLLVM_EXPERIMENTAL_TARGETS_TO_BUI
 ninja
 ```
 
+The built compiler binaries are in bin/.
+For convenience, we also add some simlinks.
+
+```sh
+cd bin
+ln -s clang riscv32-unknown-elf-clang
+ln -s ld.lld riscv32-unknown-elf-ld
+```
+
+For even more convenience, you can add the bin directory to your $PATH.
+
 ## Building the example
 
 Assuming the compiler built in the previous step is in $PATH.
