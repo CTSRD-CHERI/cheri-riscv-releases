@@ -6,3 +6,11 @@
 	path = Piccolo
 	url = https://github.com/CTSRD-CHERI/Piccolo.git
 	branch = CHERI
+[submodule "FreeRTOS"]
+	path = FreeRTOS-mirror
+	url = https://github.com/CTSRD-CHERI/FreeRTOS-mirror.git
+	branch = p1_release
+[submodule "newlib"]
+	path = newlib
+	url = https://github.com/CTSRD-CHERI/newlib.git
+	branch = p1_release
