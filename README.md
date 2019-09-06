@@ -40,7 +40,7 @@ elf_to_hex  prog.elf  Mem.hex
 cd llvm-project
 mkdir build
 cd build
-cmake ../llvm -G Ninja -DBUILD_SHARED_LIBS=ON -DLLVM_EXPERIMENTAL_TARGETS_TO_BUILD=RISCV -DLLVM_ENABLE_PROJECTS="llvm;clang;lld"
+cmake ../llvm -G Ninja -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_ASSERTIONS=On -DBUILD_SHARED_LIBS=ON -DLLVM_EXPERIMENTAL_TARGETS_TO_BUILD=RISCV -DLLVM_ENABLE_PROJECTS="llvm;clang;lld"
 ninja
 ```
 
